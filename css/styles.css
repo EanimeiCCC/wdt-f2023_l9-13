@@ -42,3 +42,32 @@ ul {
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+.image-with-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image-with-text img {
+    width: 230px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-content h2 {
+    margin: 0;
+}
+
+.bg-section {
+    background-image: url(images\plants\leaf-blur.JPG); /* Replace with your image path */
+    background-size: cover; /* Ensures the background image covers the entire element */
+    background-position: center; /* Centers the background image */
+    /* You can add more background properties if needed */
+}
