@@ -65,9 +65,3 @@ body {
     margin: 0;
 }
 
-.bg-section {
-    background-image: url(images\plants\leaf-blur.JPG); /* Replace with your image path */
-    background-size: cover; /* Ensures the background image covers the entire element */
-    background-position: center; /* Centers the background image */
-    /* You can add more background properties if needed */
-}
