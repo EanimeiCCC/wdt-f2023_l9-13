@@ -13,8 +13,7 @@ nav {
     justify-content: center;
 }
 
-/*For every nav element, make it have a pale teal/aqua (I can't tell from the pure numeric code) background color, and make it into a flexbox so its content will automatically be wrapped nicely if they overflow one line. Also, center the content.
-*/
+/*For every nav element, make it have a pale teal/aqua (I can't tell from the pure numeric code) background color, and make it into a flexbox so its content will automatically be wrapped nicely if they overflow one line. Also, center the content.*/
 
 ul {
     list-style: none;
@@ -27,9 +26,10 @@ ul {
 
 .nav-bar>li {
     display: inline-block;
+    position: relative;
 }
 
-/*For every li element that is an immediate child of an element with a class of nav-bar, make it display as an inline-block (similar to block, except it doesn't get its own line so can sit inline in text content)*/
+/*For every li element that is an immediate child of an element with a class of navigation-header, make it display as an inline-block (similar to block, except it doesn't get its own line so can sit inline in text content), and make its position relative to its parent.*/
 
 .nav-bar a {
     text-decoration: none;
