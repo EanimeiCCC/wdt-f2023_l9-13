@@ -4,11 +4,17 @@
     margin-right: auto;
 }
 
+/*For every element with a class of logo, make it display as a block element (i.e. it will render in a block, will take up its own line by default, and will not text-wrap like display: inline), and have it automatically size its left and right margins (essentially, centering it by pushing it equally far away from whatever's on either side of it)
+*/
+
 nav {
     background-color: rgb(88, 215, 133);
     display: flex;
     justify-content: center;
 }
+
+/*For every nav element, make it have a pale teal/aqua (I can't tell from the pure numeric code) background color, and make it into a flexbox so its content will automatically be wrapped nicely if they overflow one line. Also, center the content.
+*/
 
 ul {
     list-style: none;
@@ -16,17 +22,24 @@ ul {
     padding: 0;
 }
 
-.navigation-header>li {
+/*This one's mostly obvious. list-style: none; gets rid of the default bullet point decorators, and margin: 0; and padding: 0; get rid of its default spacing attributes (to remove the rightward push, I'm guessing)
+*/
+
+.nav-bar>li {
     display: inline-block;
-    position: relative;
 }
 
-.navigation-header a {
+/*For every li element that is an immediate child of an element with a class of nav-bar, make it display as an inline-block (similar to block, except it doesn't get its own line so can sit inline in text content)*/
+
+.nav-bar a {
     text-decoration: none;
     color: #000;
     display: block;
     padding: 10px 15px;
 }
+
+/*For every a element that is a child - directly or indirectly - of an element with a class of nav-bar, make its text black, remove the underlining, make it display as a block element, and add some padding (I forget if the two-value one is width height or height width).
+*/
 
 .sub-menu {
     display: none;
@@ -36,13 +49,21 @@ ul {
     background: rgb(88, 215, 133);
 }
 
-.navigation-header>li:hover .sub-menu {
+/*For every element with a class of sub-menu, hide it. There's surely nothing else we need to say about this because it will never be rendered. /j
+If it were rendered - say, by the rule immediately below this one also targetting .sub-menu but with a higher specificity - then it will have an absolute position, where it's ... off-screen at the bottom left of the page? I'm pretty sure top: 100% would make it be 100% of the screen's height downward from the top. (Or would it be its parent's height?)
+This one also has a green background.*/
+
+.nav-bar>li:hover .sub-menu {
     display: block;
 }
+
+/*Remember how I was saying .sub-menus would surely never be rendered? Render it if it's the child of a link which the user is hovering over.*/
 
 body {
     font-family: 'Roboto', sans-serif;
 }
+
+/*Nothing to say here, this one's obvious, apply a font to the whole page*/
 
 .image-with-text {
     display: flex;
@@ -50,11 +71,15 @@ body {
     margin-bottom: 20px;
 }
 
+/*Make any element with a class of image-with-text be a flexbox with its items centered (vertically, IIRC? Forget which way align-items goes). Have a 20px margin below it.*/
+
 .image-with-text img {
     width: 230px;
     height: auto;
     margin-right: 20px;
 }
+
+/*Make the images in said flexboxes have a width of 230px, a height that... something something? (I think it'd try to fill the available space vertically, destroying the image's aspect ratio. But I don't think height: auto even works, it's been a while)*/
 
 .text-content {
     display: flex;
@@ -62,6 +87,10 @@ body {
     justify-content: center;
 }
 
+/*.text-contents are flexboxes, with their content going vertically - i.e. from top to bottom first instead of left to right*/
+
 .text-content h2 {
     margin: 0;
 }
+
+/*Any second-level headers in them have no margin*/
