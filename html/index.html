@@ -11,15 +11,35 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!--This is the font for the page, I chose roboto for it's sans serif style. I might replace it later though-->
     <title>Home</title>
+    <style>
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            width: calc(260px * 2 + 2rem * 3);
+        }
+
+        .image-grid a {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+        }
+
+        .image-grid img {
+            width: 80%;
+            height: auto;
+        }
+    </style>
 </head>
 
 <body>
     <header>
         <a href="index.html">
-            <img class="logo" src="..\images\icons\sprout-grow-horizontal-524-transparent.png" role="img" aria-label="This is the Sprout and Grow Logo, it is also a clickable link"></img>
+            <img class="logo" src="..\images\icons\sprout-grow-horizontal-524-transparent.png" role="img"
+                aria-label="This is the Sprout and Grow Logo, it is also a clickable link"></img>
         </a>
         <nav>
-            <ul class="navigation-header">
+            <ul class="nav-bar">
                 <li><a href="about_us.html">About Us</a></li>
                 <li><a href="products.html">Products</a>
                     <ul class="sub-menu">
@@ -45,13 +65,37 @@
         <!--What products?-->
         <p>Check out the latest blogs at <a href="gardening tips.html">Gardening Tips</a>!</p>
         <!--Latest blog posts or updates.-->
+        <!--This is the direct links to the sections of the gardening tips page--> 
+        <div class="image-grid">
+            <a href="gardening_tips.html#section-1">
+                <img src="..\images\plants\olh-flowers2.JPG" alt="red flowers, image is link to section 1"
+                    width="230"></img>
+                <p>Section 1</p>
+            </a>
+            <a href="gardening_tips.html#section-2">
+                <img src="..\images\plants\olh-flowers3.JPG" alt="yellow flower, image is link to section 2"
+                    width="230"></img>
+                <p>Section 2</p>
+            </a>
+            <a href="gardening_tips.html#section-3">
+                <img src="..\images\plants\olh-flowers6.JPG" alt="purple flowers, image is link to section 3"
+                    width="230"></img>
+                <p>Section 3</p>
+            </a>
+            <a href="gardening_tips.html#section-4">
+                <img src="..\images\plants\olh-spider-bush1.JPG" alt="cool lil spider bush, image is link to section 4"
+                    width="230"></img>
+                <p>Section 4</p>
+            </a>
+        </div>
         <p>You can find the information to reach us <a href="contact us.html">here</a></p>
         <!--Contact information.-->
     </main>
 
     <footer>
         <nav>
-            <ul class="navigation-header">
+            <ul class="nav-bar">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about_us.html">About Us</a></li>
                 <li><a href="products.html">Products</a>
                     <ul class="sub-menu">
