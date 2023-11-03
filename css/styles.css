@@ -94,3 +94,21 @@ body {
 }
 
 /*Any second-level headers in them have no margin*/
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: calc(260px * 2 + 2rem * 3);
+}
+
+.image-grid a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.image-grid img {
+    width: 80%;
+    height: auto;
+}
