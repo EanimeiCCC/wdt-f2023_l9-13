@@ -14,7 +14,8 @@
 <body>
     <header>
         <a href="index.html">
-            <img class="logo" src="../images/icons/sprout-grow-horizontal-524-transparent.png" alt="This is the Sprout and Grow Logo, it is also a clickable link">
+            <img class="logo" src="../images/icons/sprout-grow-horizontal-524-transparent.png"
+                alt="This is the Sprout and Grow Logo, it is also a clickable link">
         </a>
         <nav>
             <ul class="nav-bar">
@@ -26,7 +27,6 @@
                     </ul>
                 </li>
                 <li><a href="gardening_tips.html">Gardening Tips</a></li>
-                <li><a href="search.html">Search</a></li>
                 <li><a href="contact_us.html">Contact Us</a></li>
             </ul>
         </nav>
@@ -50,6 +50,41 @@
             <br>
             Fax: (919) 123-9875
         </p>
+
+        <h1>
+            Form
+        </h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, voluptatem nobis, neque cum aliquam
+            laudantium inventore assumenda placeat ut accusantium at sint, aperiam debitis sunt! Ducimus corrupti
+            nesciunt fuga exercitationem.
+        </p>
+        <form action="submit_form.html" method="get">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+            <p>
+                <b>Are you a plant?</b>
+            </p>
+            <input type="radio" id="option1" name="choice" value="Yes">
+            <label for="option1">Yes</label><br>
+
+            <input type="radio" id="option2" name="choice" value="Definitely">
+            <label for="option2">Definitely</label><br>
+
+            <input type="radio" id="option3" name="choice" value="Absolutely">
+            <label for="option3">Absolutely</label><br>
+            <br>
+            <!--I rigged it-->
+            <button type="submit">Submit</button>
+        </form>
+
     </main>
 
     <footer>
@@ -63,7 +98,6 @@
                     </ul>
                 </li>
                 <li><a href="gardening_tips.html">Gardening Tips</a></li>
-                <li><a href="search.html">Search</a></li>
                 <li><a href="contact_us.html">Contact Us</a></li>
             </ul>
         </nav>
