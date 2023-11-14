@@ -60,29 +60,34 @@
             nesciunt fuga exercitationem.
         </p>
         <form action="submit_form.html" method="get">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required><br><br>
+            <div class="name">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+            </div>
+            <div class="email">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+            </div>
+            <div class="message">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            </div>
+            <div class="radio">
+                <p>
+                    <b>Are you a plant?</b>
+                </p>
+                <input type="radio" id="option1" name="choice" value="Yes">
+                <label for="option1">Yes</label>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
+                <input type="radio" id="option2" name="choice" value="Definitely">
+                <label for="option2">Definitely</label>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="4" required></textarea><br><br>
-
-            <p>
-                <b>Are you a plant?</b>
-            </p>
-            <input type="radio" id="option1" name="choice" value="Yes">
-            <label for="option1">Yes</label><br>
-
-            <input type="radio" id="option2" name="choice" value="Definitely">
-            <label for="option2">Definitely</label><br>
-
-            <input type="radio" id="option3" name="choice" value="Absolutely">
-            <label for="option3">Absolutely</label><br>
-            <br>
-            <!--I rigged it-->
-            <button type="submit">Submit</button>
+                <input type="radio" id="option3" name="choice" value="Absolutely">
+                <label for="option3">Absolutely</label>
+                <br>
+                <!--I rigged it-->
+                <button type="submit">Submit</button>
+            </div>
         </form>
 
     </main>
